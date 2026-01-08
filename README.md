@@ -284,18 +284,6 @@ D3.4 - Swarm
 ----
 
 <details>
-  <summary><b> 4. Boas Práticas</b></summary>
-<div align="Left"> 
-<br>
-
-
-
-</div> 
-</details>
-
-----
-
-<details>
   <summary><b> Projetos </b></summary>
 <div align="Left"> 
 <br>
