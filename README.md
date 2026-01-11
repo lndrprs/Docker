@@ -15,7 +15,7 @@
 ----
 
 <details>
-  <summary><b> 1. Fundamentos</b></summary>
+  <summary><b> 1. Tópicos</b></summary>
 <div align="Left"> 
 <br>
 
@@ -118,17 +118,7 @@ D1.9 - URLs
 
   > - Imagens Oficiais: https://hub.docker.com/search?badges=official&type=image
 
-</div> 
-</details>
-
-----
-
-<details>
-  <summary><b> 2. Intermediário</b></summary>
-<div align="Left"> 
-<br>
-
-D2.1 - Redes | Networks no Docker  
+D1.10 - Redes | Networks no Docker  
  > - As redes definem como será a comunicação do Contêiner com os demais Contêineres e Dispositivos.  
  > - Tipos de Rede:
  >    
@@ -158,7 +148,7 @@ D2.1 - Redes | Networks no Docker
  docker run --network host nginx 
 ````
   
-D2.2 - O Que é o "Docker Compose"?  
+D1.11 - O Que é o "Docker Compose"?  
  > - Docker Compose permite definir e gerenciar múltiplos contêineres usando um YAML: docker-compose.yml;
  > - Se trata de uma orquestração de vários contêineres como um projeto;
  > - É possível rodar o comando e usar o parâmetro "-f" para usar outro arquivo (que possua outro nome);
@@ -191,14 +181,14 @@ docker compose --project-name logs
 kompose convert
 ````
    
-D2.3 - Multi-Stage Build  
+D1.12 - Multi-Stage Build  
  > - Técnica para criar imagens Docker otimizadas e Menores;  
  > - Separa o Processo de Construção (Build), do processo de Execução (Runtime);  
  > - Nesse processo, são retiradas as dependências, ferramentas e bibliotecas, o que deixa mais seguro e leve;  
  > - Deploy mais rápido, pela diminuição de dados;  
  > - Exemplo de Multi-Stage com o Grafana, Prometheus e OpenTelemetry / API, na pasta de "Projetos".   
 
-D2.5 - Limitação de Recursos 
+D1.13 - Limitação de Recursos 
  > - Limitar os recursos pode ajudar em testes e também no descontrole de Contêineres;
  > - Além disso, também garante a previsibilidade em ambientes compartilhados.
 ```
@@ -217,17 +207,7 @@ docker inspect nginx
 
 ```
 
-</div> 
-</details>
-
-----
-
-<details>
-  <summary><b> 3. Avançado</b></summary>
-<div align="Left"> 
-<br>
-
-D3.1 - Escaneamento de Imagens  
+D1.14 - Escaneamento de Imagens  
  > - O Scanner verifica uma imagem docker por pacotes e bibliotecas com vulnerabilidades conhecidas;  
  > - Além disso, também verifica problemas de configuração e licenças de software;  
  > - A análise é feita comparando os dados dos pacotes com o banco de dados de vulnerabilidades;  
@@ -242,7 +222,7 @@ D3.1 - Escaneamento de Imagens
  >   - Atualização de Imagens - ou versões dos pacotes;  
  >   - Integração com CI/CD - Automatizar o escaneamento.
 
-D3.2 - Modelo de Segurança do Docker 
+D1.15 - Modelo de Segurança do Docker 
  > - Existem três conceitos que formam o modelo de segurança do Docker:
  >  
  > | Conceito     | Descrição                                                 |
@@ -251,7 +231,7 @@ D3.2 - Modelo de Segurança do Docker
  > | Capabilities | Reduz privilégios do root no contêiner                    |
  > | SecComp Prof.| Restringe chamadas do Container ao Kernel                 |
 
-D3.3 - Servidor de Registro
+D1.16 - Servidor de Registro
   > - "Registry" de imagens Docker controlado por uma pessoa / empresa;
   > - Nisso, existe mais segurança, pois não terá a exposição do Docker Hub.
   > - Exemplos:
@@ -260,7 +240,7 @@ D3.3 - Servidor de Registro
   >   - Amazon ECR;
   >   - Harbor.   
 
-D3.4 - Swarm
+D1.17 - Swarm
   > - Orquestrador nativo do Docker;
   > - Cria e gerencia cluster de contêineres, integrado ao Docker CLI.
   > - Objetivos:
